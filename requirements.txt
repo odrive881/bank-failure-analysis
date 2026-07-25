@@ -1,0 +1,13 @@
+# Pipeline (companyfacts_data_pull.py, financial_data_standardization_modified.py,
+# processed_data_ingestion.py, pdf_parser/bank_10k_parser_modified.py)
+requests==2.34.2
+pandas==3.0.3
+pyarrow==25.0.0
+fastparquet==2026.5.0
+pdfplumber==0.11.10
+
+# Analysis notebook (data_analysis.ipynb)
+matplotlib==3.11.1
+seaborn==0.13.2
+scipy==1.18.0
+jupyter

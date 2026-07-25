@@ -1,0 +1,245 @@
+{
+  "cik": null,
+  "company_name": "First Republic Bank",
+  "source_file": [
+    "parsed_financials_First_Republic_Bank_10-K_2021.json",
+    "parsed_financials_First_Republic_Bank_10-K_2022.json"
+  ],
+  "currency": "USD",
+  "annual_metrics": {
+    "2020": {
+      "total_assets": {
+        "value_usd": 142502000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalAssets .............................................................. $181,087"
+      },
+      "net_income": {
+        "value_usd": 1064000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netincome ................................................................. 1,478"
+      },
+      "stockholders_equity": {
+        "value_usd": 11751000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalShareholders’Equity ................................................... 15,898"
+      },
+      "noninterest_expense": {
+        "value_usd": 2426000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestexpense ................................................ 3,147"
+      },
+      "interest_income": {
+        "value_usd": 3853000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalinterestincome .................................................... 4,385"
+      },
+      "noninterest_income": {
+        "value_usd": 655000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestincome................................................. 920"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 114929000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalDeposits .............................................................. 156,321"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": 23000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulatedothercomprehensiveincome(loss) ................................. (31)"
+      },
+      "net_interest_income": {
+        "value_usd": 3262000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netinterestincome ......................................................... 4,114"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 4508000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "2021": {
+      "total_assets": {
+        "value_usd": 181087000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalAssets .............................................................. $181,087"
+      },
+      "net_income": {
+        "value_usd": 1478000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netincome ................................................................. 1,478"
+      },
+      "stockholders_equity": {
+        "value_usd": 15898000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalShareholders’Equity ................................................... 15,898"
+      },
+      "noninterest_expense": {
+        "value_usd": 3147000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestexpense ................................................ 3,147"
+      },
+      "interest_income": {
+        "value_usd": 4385000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalinterestincome .................................................... 4,385"
+      },
+      "noninterest_income": {
+        "value_usd": 920000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestincome................................................. 920"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 156321000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalDeposits .............................................................. 156,321"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -31000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulatedothercomprehensiveincome(loss) ................................. (31)"
+      },
+      "net_interest_income": {
+        "value_usd": 4114000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netinterestincome ......................................................... 4,114"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 5305000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "2022": {
+      "total_assets": {
+        "value_usd": 212639000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalAssets ................................................................ $212,639"
+      },
+      "net_income": {
+        "value_usd": 1665000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netincome ................................................................. 1,665"
+      },
+      "stockholders_equity": {
+        "value_usd": 17446000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalShareholders’Equity ................................................... 17,446"
+      },
+      "noninterest_expense": {
+        "value_usd": 3617000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestexpense ................................................ 3,617"
+      },
+      "interest_income": {
+        "value_usd": 5722000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalinterestincome .................................................... 5,722"
+      },
+      "noninterest_income": {
+        "value_usd": 1031000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Totalnoninterestincome................................................. 1,031"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 176437000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "TotalDeposits .............................................................. 176,437"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -331000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulatedothercomprehensiveloss ......................................... (331)"
+      },
+      "net_interest_income": {
+        "value_usd": 4834000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Netinterestincome ......................................................... 4,834"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 6753000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

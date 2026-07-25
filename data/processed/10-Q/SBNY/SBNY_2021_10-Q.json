@@ -1,0 +1,246 @@
+{
+  "cik": null,
+  "company_name": "Signature Bank",
+  "source_file": [
+    "parsed_financials_Signature_Bank_10-Q_2021_Q1.json",
+    "parsed_financials_Signature_Bank_10-Q_2021_Q2.json",
+    "parsed_financials_Signature_Bank_10-Q_2021_Q3.json"
+  ],
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 85382194000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total assets $ 85,382,194"
+      },
+      "net_income": {
+        "value_usd": 190533000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income $ 190,533"
+      },
+      "stockholders_equity": {
+        "value_usd": 6642403000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total shareholders' equity 6,642,403"
+      },
+      "noninterest_expense": {
+        "value_usd": 166391000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest expense 166,391"
+      },
+      "interest_income": {
+        "value_usd": 491542000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income 491,542"
+      },
+      "noninterest_income": {
+        "value_usd": 32701000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest income 32,701"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 73974579000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total deposits 73,974,579"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -129303000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss (129,303)"
+      },
+      "net_interest_income": {
+        "value_usd": 406507000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income before provision for credit losses 406,507"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 524243000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 96887801000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total assets $ 96,887,801"
+      },
+      "net_income": {
+        "value_usd": 214493000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income $ 214,493"
+      },
+      "stockholders_equity": {
+        "value_usd": 6844563000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total shareholders' equity 6,844,563"
+      },
+      "noninterest_expense": {
+        "value_usd": 172019000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest expense 172,019"
+      },
+      "interest_income": {
+        "value_usd": 536810000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income 536,810"
+      },
+      "noninterest_income": {
+        "value_usd": 23368000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest income 23,368"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 85562476000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total deposits 85,562,476"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -111889000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss (111,889)"
+      },
+      "net_interest_income": {
+        "value_usd": 457221000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income before provision for credit losses 457,221"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 560178000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 107850739000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total assets $ 107,850,739"
+      },
+      "net_income": {
+        "value_usd": 241423000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income $ 241,423"
+      },
+      "stockholders_equity": {
+        "value_usd": 7679139000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total shareholders' equity 7,679,139"
+      },
+      "noninterest_expense": {
+        "value_usd": 181243000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest expense 181,243"
+      },
+      "interest_income": {
+        "value_usd": 555720000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income 555,720"
+      },
+      "noninterest_income": {
+        "value_usd": 31367000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total non-interest income 31,367"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 95566340000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total deposits 95,566,340"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -142726000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss (142,726)"
+      },
+      "net_interest_income": {
+        "value_usd": 480876000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income before provision for credit losses 480,876"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 587087000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

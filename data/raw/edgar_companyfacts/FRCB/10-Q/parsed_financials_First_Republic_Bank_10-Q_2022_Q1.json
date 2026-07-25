@@ -1,0 +1,101 @@
+[
+  {
+    "source_file": "EFR33520228077-1_FRB_10_Q_Q1_2022.pdf",
+    "bank": "First Republic Bank",
+    "filing_type": "10-Q",
+    "period_end_date": "March 31, 2022",
+    "data": {
+      "total_assets": {
+        "label_matched": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              3,850         3,631",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "December 31,\n                                                                                                                                                   2022": 3850000000.0,
+          "column_2": 3631000000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                7,042         7,357",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "December 31,\n                                                                                                                                                   2022": 7042000000.0,
+          "column_2": 7357000000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                    (137)         (31)",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "December 31,\n                                                                                                                                                   2022": -137000000.0,
+          "column_2": -31000000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total Shareholders' Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                        16,154        15,898",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "December 31,\n                                                                                                                                                   2022": 16154000000.0,
+          "column_2": 15898000000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                 1,189     1,022",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 1189000000.0,
+          "column_2": 1022000000.0
+        }
+      },
+      "net_interest_income": {
+        "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             1,145          939",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 1145000000.0,
+          "column_2": 939000000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                              251            196",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 251000000.0,
+          "column_2": 196000000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                             866            721",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 866000000.0,
+          "column_2": 721000000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        401            335",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 401000000.0,
+          "column_2": 335000000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "column_1": 1440000000.0,
+          "column_2": 1218000000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

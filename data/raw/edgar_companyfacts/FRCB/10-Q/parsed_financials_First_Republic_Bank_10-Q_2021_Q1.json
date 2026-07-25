@@ -1,0 +1,101 @@
+[
+  {
+    "source_file": "EFR33520215743-1_FRB_10_Q_Q1_2021.pdf",
+    "bank": "First Republic Bank",
+    "filing_type": "10-Q",
+    "period_end_date": "March 31, 2021",
+    "data": {
+      "total_assets": {
+        "label_matched": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 155,797,960 $ 142,502,134",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 155797960000.0,
+          "2020": 142502134000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127,906,953 114,928,800",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 127906953000.0,
+          "2020": 114928800000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive income (loss) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (21,423) 23,378",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": -21423000.0,
+          "2020": 23378000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total Shareholders\u2019 Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12,941,730 11,750,646",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 12941730000.0,
+          "2020": 11750646000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,021,964 956,121",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 1021964000.0,
+          "2020": 956121000.0
+        }
+      },
+      "net_interest_income": {
+        "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 938,782 752,132",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 938782000.0,
+          "2020": 752132000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195,851 164,044",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 195851000.0,
+          "2020": 164044000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 720,396 582,017",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 720396000.0,
+          "2020": 582017000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 334,833 218,686",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 334833000.0,
+          "2020": 218686000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2021": 1217815000.0,
+          "2020": 1120165000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

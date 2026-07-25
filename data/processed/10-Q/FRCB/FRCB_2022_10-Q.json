@@ -1,0 +1,249 @@
+{
+  "cik": null,
+  "company_name": "First Republic Bank",
+  "source_file": [
+    "parsed_financials_First Republic Bank_10Q_2022_Q1.json",
+    "parsed_financials_First Republic Bank_10Q_2022_Q2.json",
+    "parsed_financials_First Republic Bank_10Q_2022_Q3.json",
+    "parsed_financials_First_Republic_Bank_10-Q_2022_Q1.json",
+    "parsed_financials_First_Republic_Bank_10-Q_2022_Q2.json",
+    "parsed_financials_First_Republic_Bank_10-Q_2022_Q3.json"
+  ],
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 3850000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .              3,850"
+      },
+      "net_income": {
+        "value_usd": 401000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .        401"
+      },
+      "stockholders_equity": {
+        "value_usd": 16154000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders' Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                        16,154"
+      },
+      "noninterest_expense": {
+        "value_usd": 866000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                             866"
+      },
+      "interest_income": {
+        "value_usd": 1189000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                 1,189"
+      },
+      "noninterest_income": {
+        "value_usd": 251000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                              251"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 7042000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                7,042"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -137000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                    (137)"
+      },
+      "net_interest_income": {
+        "value_usd": 1145000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             1,145"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1440000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 197908000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 197,908"
+      },
+      "net_income": {
+        "value_usd": 433000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433"
+      },
+      "stockholders_equity": {
+        "value_usd": 16426000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders’ Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16,426"
+      },
+      "noninterest_expense": {
+        "value_usd": 913000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . 913"
+      },
+      "interest_income": {
+        "value_usd": 1316000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,316"
+      },
+      "noninterest_income": {
+        "value_usd": 263000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . 263"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 165647000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165,647"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -227000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (227)"
+      },
+      "net_interest_income": {
+        "value_usd": 1246000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,246"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1579000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 205109000000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 205,109"
+      },
+      "net_income": {
+        "value_usd": 445000000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 445"
+      },
+      "stockholders_equity": {
+        "value_usd": 17119000000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders’ Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17,119"
+      },
+      "noninterest_expense": {
+        "value_usd": 919000000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . 919"
+      },
+      "interest_income": {
+        "value_usd": 1518000000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,518"
+      },
+      "noninterest_income": {
+        "value_usd": 254000000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . 254"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 172382000000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 172,382"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -337000000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (337)"
+      },
+      "net_interest_income": {
+        "value_usd": 1269000000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,269"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1772000000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

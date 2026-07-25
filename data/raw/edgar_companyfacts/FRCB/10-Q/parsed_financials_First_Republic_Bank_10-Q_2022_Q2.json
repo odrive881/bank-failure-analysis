@@ -1,0 +1,113 @@
+[
+  {
+    "source_file": "EFR33520228136-1_FRB_10_Q_Q2_2022.pdf",
+    "bank": "First Republic Bank",
+    "filing_type": "10-Q",
+    "period_end_date": "June 30, 2022",
+    "data": {
+      "total_assets": {
+        "label_matched": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 197,908 $ 181,087",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 197908000000.0,
+          "2021": 181087000000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 165,647 156,321",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 165647000000.0,
+          "2021": 156321000000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (227) (31)",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": -227000000.0,
+          "2021": -31000000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total Shareholders\u2019 Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16,426 15,898",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 16426000000.0,
+          "2021": 15898000000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,316 1,078 2,505 2,100",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 1316000000.0,
+          "2021": 1078000000.0,
+          "column_3": 2505000000.0,
+          "column_4": 2100000000.0
+        }
+      },
+      "net_interest_income": {
+        "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,246 1,003 2,391 1,942",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 1246000000.0,
+          "2021": 1003000000.0,
+          "column_3": 2391000000.0,
+          "column_4": 1942000000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . 263 226 514 422",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 263000000.0,
+          "2021": 226000000.0,
+          "column_3": 514000000.0,
+          "column_4": 422000000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . 913 762 1,779 1,483",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 913000000.0,
+          "2021": 762000000.0,
+          "column_3": 1779000000.0,
+          "column_4": 1483000000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 433 373 834 708",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 433000000.0,
+          "2021": 373000000.0,
+          "column_3": 834000000.0,
+          "column_4": 708000000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2022": 1579000000.0,
+          "2021": 1304000000.0,
+          "column_3": 3019000000.0,
+          "column_4": 2522000000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

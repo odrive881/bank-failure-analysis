@@ -1,0 +1,102 @@
+[
+  {
+    "source_file": "EFR33520229195-1_3Q_2022_10Q_FINAL__filing_copy_.pdf",
+    "bank": "Signature Banks",
+    "filing_type": "10-Q",
+    "period_end_date": null,
+    "data": {
+      "total_assets": {
+        "label_matched": "Total assets $ 114,468,746 118,445,427",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2022": 114468746000.0,
+          "column_2": 118445427000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total deposits 102,775,514 106,132,794",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2022": 102775514000.0,
+          "column_2": 106132794000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive loss (2,051,055) (222,332)",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2022": -2051055000.0,
+          "column_2": -222332000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total shareholders' equity 7,690,523 7,840,618",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2022": 7690523000.0,
+          "column_2": 7840618000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income 976,353 555,720 2,393,096 1,584,072",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 976353000.0,
+          "2021": 555720000.0,
+          "column_3": 2393096000.0,
+          "column_4": 1584072000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total non-interest income 43,751 31,367 115,817 87,436",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 43751000.0,
+          "2021": 31367000.0,
+          "column_3": 115817000.0,
+          "column_4": 87436000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total non-interest expense 225,461 181,243 628,887 519,653",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 225461000.0,
+          "2021": 181243000.0,
+          "column_3": 628887000.0,
+          "column_4": 519653000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income $ 358,467 241,423 1,036,203 646,449",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 358467000.0,
+          "2021": 241423000.0,
+          "column_3": 1036203000.0,
+          "column_4": 646449000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2022": 1020104000.0,
+          "2021": 587087000.0,
+          "column_3": 2508913000.0,
+          "column_4": 1671508000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

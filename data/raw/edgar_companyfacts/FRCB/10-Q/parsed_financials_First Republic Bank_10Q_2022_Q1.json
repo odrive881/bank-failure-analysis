@@ -1,0 +1,92 @@
+[
+  {
+    "source_file": "EFR33520228077-1_FRB_10_Q_Q1_2022.pdf",
+    "bank": "First Republic Bank",
+    "filing_type": "10-Q",
+    "period_end_date": "March 31, 2022",
+    "data": {
+      "total_assets": {
+        "label_matched": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 187121000000.0,
+          "2021": 181087000000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 162060000000.0,
+          "2021": 156321000000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive loss . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": -137000000.0,
+          "2021": -31000000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total Shareholders\u2019 Equity . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 16154000000.0,
+          "2021": 15898000000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 1189000000.0,
+          "2021": 1022000000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 251000000.0,
+          "2021": 196000000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . ",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 866000000.0,
+          "2021": 721000000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 401000000.0,
+          "2021": 335000000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2022": 1440000000.0,
+          "2021": 1218000000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

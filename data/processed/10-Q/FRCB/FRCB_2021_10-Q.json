@@ -1,0 +1,246 @@
+{
+  "cik": null,
+  "company_name": "First Republic Bank",
+  "source_file": [
+    "parsed_financials_First_Republic_Bank_10-Q_2021_Q1.json",
+    "parsed_financials_First_Republic_Bank_10-Q_2021_Q2.json",
+    "parsed_financials_First_Republic_Bank_10-Q_2021_Q3.json"
+  ],
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 155797960000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 155,797,960"
+      },
+      "net_income": {
+        "value_usd": 334833000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 334,833"
+      },
+      "stockholders_equity": {
+        "value_usd": 12941730000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders’ Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12,941,730"
+      },
+      "noninterest_expense": {
+        "value_usd": 720396000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 720,396"
+      },
+      "interest_income": {
+        "value_usd": 1021964000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,021,964"
+      },
+      "noninterest_income": {
+        "value_usd": 195851000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 195,851"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 127906953000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 127,906,953"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -21423000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive income (loss) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (21,423)"
+      },
+      "net_interest_income": {
+        "value_usd": 938782000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "March 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 938,782"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1217815000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 161646734000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 161,646,734"
+      },
+      "net_income": {
+        "value_usd": 373106000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 373,106"
+      },
+      "stockholders_equity": {
+        "value_usd": 13274727000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders’ Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13,274,727"
+      },
+      "noninterest_expense": {
+        "value_usd": 762765000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 762,765"
+      },
+      "interest_income": {
+        "value_usd": 1078005000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,078,005"
+      },
+      "noninterest_income": {
+        "value_usd": 226608000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226,608"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 134656835000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134,656,835"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -10375000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive income (loss) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (10,375)"
+      },
+      "net_interest_income": {
+        "value_usd": 1003865000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "June 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,003,865"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1304613000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 172570503000.0,
+        "concept": "pdf-derived:total_assets",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 172,570,503"
+      },
+      "net_income": {
+        "value_usd": 369687000.0,
+        "concept": "pdf-derived:net_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 369,687"
+      },
+      "stockholders_equity": {
+        "value_usd": 14801794000.0,
+        "concept": "pdf-derived:stockholders_equity",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Shareholders’ Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14,801,794"
+      },
+      "noninterest_expense": {
+        "value_usd": 798531000.0,
+        "concept": "pdf-derived:noninterest_expense",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 798,531"
+      },
+      "interest_income": {
+        "value_usd": 1117671000.0,
+        "concept": "pdf-derived:interest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,117,671"
+      },
+      "noninterest_income": {
+        "value_usd": 250358000.0,
+        "concept": "pdf-derived:noninterest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 250,358"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 145326345000.0,
+        "concept": "pdf-derived:total_deposits",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 145,326,345"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -19846000.0,
+        "concept": "pdf-derived:accumulated_oci",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Accumulated other comprehensive income (loss) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (19,846)"
+      },
+      "net_interest_income": {
+        "value_usd": 1052284000.0,
+        "concept": "pdf-derived:net_interest_income",
+        "end_date": "September 30, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,052,284"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1368029000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

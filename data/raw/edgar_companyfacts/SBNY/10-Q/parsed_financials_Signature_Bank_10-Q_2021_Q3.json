@@ -1,0 +1,113 @@
+[
+  {
+    "source_file": "EFR33520215915-1_3Q_2021_10Q_FINAL__filing_copy_.pdf",
+    "bank": "Signature Bank",
+    "filing_type": "10-Q",
+    "period_end_date": null,
+    "data": {
+      "total_assets": {
+        "label_matched": "Total assets $ 107,850,739 73,888,344",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2021": 107850739000.0,
+          "column_2": 73888344000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total deposits 95,566,340 63,315,323",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2021": 95566340000.0,
+          "column_2": 63315323000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive loss (142,726) (72,896)",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2021": -142726000.0,
+          "column_2": -72896000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total shareholders' equity 7,679,139 5,826,909",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "December 31,\n2021": 7679139000.0,
+          "column_2": 5826909000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income 555,720 481,492 1,584,072 1,443,088",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 555720000.0,
+          "2020": 481492000.0,
+          "column_3": 1584072000.0,
+          "column_4": 1443088000.0
+        }
+      },
+      "net_interest_income": {
+        "label_matched": "Net interest income before provision for credit losses 480,876 388,713 1,344,604 1,124,108",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 480876000.0,
+          "2020": 388713000.0,
+          "column_3": 1344604000.0,
+          "column_4": 1124108000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total non-interest income 31,367 24,213 87,436 51,057",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 31367000.0,
+          "2020": 24213000.0,
+          "column_3": 87436000.0,
+          "column_4": 51057000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total non-interest expense 181,243 160,563 519,653 456,402",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 181243000.0,
+          "2020": 160563000.0,
+          "column_3": 519653000.0,
+          "column_4": 456402000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income $ 241,423 138,550 646,449 355,350",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 241423000.0,
+          "2020": 138550000.0,
+          "column_3": 646449000.0,
+          "column_4": 355350000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2021": 587087000.0,
+          "2020": 505705000.0,
+          "column_3": 1671508000.0,
+          "column_4": 1494145000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

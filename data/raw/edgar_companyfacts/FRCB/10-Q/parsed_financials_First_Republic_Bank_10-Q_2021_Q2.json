@@ -1,0 +1,113 @@
+[
+  {
+    "source_file": "EFR33520215832-1_FRB_10_Q_Q2_2021.pdf",
+    "bank": "First Republic Bank",
+    "filing_type": "10-Q",
+    "period_end_date": "June 30, 2021",
+    "data": {
+      "total_assets": {
+        "label_matched": "Total Assets . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . $ 161,646,734 $ 142,502,134",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 161646734000.0,
+          "2020": 142502134000.0
+        }
+      },
+      "total_deposits": {
+        "label_matched": "Total Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 134,656,835 114,928,800",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 134656835000.0,
+          "2020": 114928800000.0
+        }
+      },
+      "accumulated_oci": {
+        "label_matched": "Accumulated other comprehensive income (loss) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . (10,375) 23,378",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": -10375000.0,
+          "2020": 23378000.0
+        }
+      },
+      "stockholders_equity": {
+        "label_matched": "Total Shareholders\u2019 Equity . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13,274,727 11,750,646",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 13274727000.0,
+          "2020": 11750646000.0
+        }
+      },
+      "interest_income": {
+        "label_matched": "Total interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,078,005 943,424 2,099,969 1,899,545",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 1078005000.0,
+          "2020": 943424000.0,
+          "column_3": 2099969000.0,
+          "column_4": 1899545000.0
+        }
+      },
+      "net_interest_income": {
+        "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,003,865 787,412 1,942,647 1,539,544",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 1003865000.0,
+          "2020": 787412000.0,
+          "column_3": 1942647000.0,
+          "column_4": 1539544000.0
+        }
+      },
+      "noninterest_income": {
+        "label_matched": "Total noninterest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 226,608 131,569 422,459 295,613",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 226608000.0,
+          "2020": 131569000.0,
+          "column_3": 422459000.0,
+          "column_4": 295613000.0
+        }
+      },
+      "noninterest_expense": {
+        "label_matched": "Total noninterest expense . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 762,765 569,458 1,483,161 1,151,475",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 762765000.0,
+          "2020": 569458000.0,
+          "column_3": 1483161000.0,
+          "column_4": 1151475000.0
+        }
+      },
+      "net_income": {
+        "label_matched": "Net income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 373,106 256,768 707,939 475,454",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 373106000.0,
+          "2020": 256768000.0,
+          "column_3": 707939000.0,
+          "column_4": 475454000.0
+        }
+      },
+      "interest_income_plus_noninterest_income": {
+        "label_matched": "derived: Total Interest Income + Total Noninterest Income",
+        "units": "USD",
+        "reported_scale": "derived",
+        "values_by_period": {
+          "2021": 1304613000.0,
+          "2020": 1074993000.0,
+          "column_3": 2522428000.0,
+          "column_4": 2195158000.0
+        }
+      }
+    },
+    "warnings": []
+  }
+]

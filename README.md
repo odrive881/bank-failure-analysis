@@ -40,12 +40,13 @@ Run the whole thing with:
 python run_pipeline.py
 ```
 
-This executes four stages in order:
+This executes five stages in order:
 
 1. **Raw data pull** (`companyfacts_data_pull.py`) — pulls SEC EDGAR XBRL company facts (JPM, BAC, PNC, SIVB), FDIC Call Report financials (all 6 banks), and FDIC failure records (the 3 failed banks) into `data/raw/`. Already-downloaded files are skipped.
 2. **PDF parsing** (`pdf_parser/bank_10k_parser_modified.py`) — First Republic and Signature Bank aren't cleanly available via EDGAR, so their 10-K and 10-Q PDFs (`data/PDF raw data/`) are parsed directly into the same raw schema. Already-parsed PDFs are skipped.
-3. **Standardization** (`financial_data_standardization_modified.py`) — normalizes both EDGAR and PDF-derived data into one common annual metric schema, written to `data/processed/`.
-4. **Ingestion** (`processed_data_ingestion.py`) — flattens all processed per-bank JSON into one long-format dataframe, saved to `data/processed/processed_dataframes/DataframeLong.parquet`.
+3. **Standardization** (`financial_data_standardization_modified.py`) — normalizes both EDGAR and PDF-derived data into one common annual metric schema, written to `data/processed/`, and a quarterly (Q1-Q3) schema written to `data/processed/10-Q/`. No bank files a 10-Q for Q4, so Q1-Q3 is all that's directly parsed.
+4. **Q4 derivation** (`derive_q4_metrics.py`) — fills in the missing Q4 for each bank-year: flow metrics (net income, interest/noninterest income and expense, net interest income) are computed as the annual 10-K value minus Q1+Q2+Q3; balance-sheet metrics (total assets, equity, deposits, AOCI) use the 10-K year-end value directly. Derived fields are marked `"calculated"` in place of the usual source provenance. Runs after standardization on every pipeline run, since standardization always regenerates the Q1-Q3 files from scratch.
+5. **Ingestion** (`processed_data_ingestion.py`) — flattens all processed per-bank annual and quarterly JSON into one long-format dataframe (with a `quarter` column: `FY`, `Q1`-`Q4`), saved to `data/processed/processed_dataframes/DataframeLong.parquet`.
 
 ## Analysis
 

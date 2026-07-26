@@ -1,0 +1,215 @@
+{
+  "cik": "0000070858",
+  "company_name": "BANK OF AMERICA CORP",
+  "source_file": "BAC.json",
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 3194657000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "net_income": {
+        "value_usd": 8161000000,
+        "concept": "us-gaap:NetIncomeLoss",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "stockholders_equity": {
+        "value_usd": 280196000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "noninterest_expense": {
+        "value_usd": 16238000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "interest_income": {
+        "value_usd": 28655000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "noninterest_income": {
+        "value_usd": 11810000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 1910402000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -18527000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "net_interest_income": {
+        "value_usd": 14448000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 40465000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 3123198000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "net_income": {
+        "value_usd": 7408000000,
+        "concept": "us-gaap:NetIncomeLoss",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "stockholders_equity": {
+        "value_usd": 280196000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2023-03-31",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "noninterest_expense": {
+        "value_usd": 16038000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "interest_income": {
+        "value_usd": 32354000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "noninterest_income": {
+        "value_usd": 11039000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 1877209000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -20742000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "net_interest_income": {
+        "value_usd": 14158000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 43393000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 3153090000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "net_income": {
+        "value_usd": 7802000000,
+        "concept": "us-gaap:NetIncomeLoss",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "stockholders_equity": {
+        "value_usd": 283319000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2023-06-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "noninterest_expense": {
+        "value_usd": 15838000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "interest_income": {
+        "value_usd": 33624000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "noninterest_income": {
+        "value_usd": 10788000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 1884601000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -21792000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "net_interest_income": {
+        "value_usd": 14379000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 44412000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

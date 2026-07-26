@@ -27,11 +27,16 @@ from __future__ import annotations
 import argparse
 import json
 import re
+from datetime import date
 from pathlib import Path
 from typing import Any
 
 
 YEARS = (2020, 2021, 2022, 2023)
+
+# EDGAR-sourced quarterly (10-Q) extraction only targets these years -- matches
+# the range already established by the FRCB/SBNY PDF-derived quarterly files.
+QUARTERLY_YEARS = (2021, 2022, 2023)
 
 # Ordered fallbacks.  Add company-specific concepts here if a bank reports a
 # metric under an extension taxonomy rather than a US-GAAP concept.
@@ -40,7 +45,16 @@ METRICS: dict[str, list[str]] = {
     "net_income": ["us-gaap:NetIncomeLoss", "us-gaap:ProfitLoss"],
     "stockholders_equity": ["us-gaap:StockholdersEquity"],
     "noninterest_expense": ["us-gaap:NoninterestExpense"],
-    "interest_income": ["us-gaap:InterestAndDividendIncomeOperating"],
+    # JPM does not tag InterestAndDividendIncomeOperating at all; it uses
+    # InterestIncomeOperating instead. Confirmed live against JPM's raw
+    # companyfacts data (FY2020-2023 values are consistent with JPM's actual
+    # total interest income), and against the fact that JPM's interest_income
+    # was null in every already-shipped annual file before this fallback was
+    # added.
+    "interest_income": [
+        "us-gaap:InterestAndDividendIncomeOperating",
+        "us-gaap:InterestIncomeOperating",
+    ],
     "noninterest_income": ["us-gaap:NoninterestIncome"],
     "total_deposits_consolidated": ["us-gaap:Deposits"],
     "accumulated_other_comprehensive_income_loss": [
@@ -101,6 +115,14 @@ def concept_fact(facts: dict[str, Any], concept: str) -> dict[str, Any] | None:
     return facts.get(taxonomy, {}).get(tag)
 
 
+def best_observation(observations: list[dict[str, Any]]) -> dict[str, Any] | None:
+    """Among duplicate observations (comparative columns, later filings), prefer
+    the most recently filed one."""
+    if not observations:
+        return None
+    return max(observations, key=lambda item: (item.get("filed", ""), item.get("accn", "")))
+
+
 def annual_observation(fact: dict[str, Any], year: int, is_flow: bool) -> dict[str, Any] | None:
     """Choose the best USD annual 10-K observation ending in ``year``.
 
@@ -125,14 +147,11 @@ def annual_observation(fact: dict[str, Any], year: int, is_flow: bool) -> dict[s
                     continue
                 # A normal annual duration is 350--380 days. This also supports
                 # non-calendar fiscal years without accepting quarterly periods.
-                from datetime import date
                 duration = (date.fromisoformat(obs["end"]) - date.fromisoformat(start)).days
                 if not 350 <= duration <= 380:
                     continue
             candidates.append(obs)
-    if not candidates:
-        return None
-    return max(candidates, key=lambda item: (item.get("filed", ""), item.get("accn", "")))
+    return best_observation(candidates)
 
 
 def extract_metric(facts: dict[str, Any], metric: str, year: int) -> dict[str, Any] | None:
@@ -172,6 +191,158 @@ def extract_company(path: Path) -> dict[str, Any]:
         )
         result["annual_metrics"][str(year)] = metrics
     return result
+
+
+def is_edgar_companyfacts(path: Path) -> bool:
+    """Identify a raw SEC Company Facts JSON file (as opposed to PDF-parser output)."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return False
+    return isinstance(data, dict) and isinstance(data.get("facts"), dict)
+
+
+def quarter_candidates(fact: dict[str, Any], year: int, quarter: str) -> list[dict[str, Any]]:
+    """USD observations from a 10-Q filing for the given fiscal year/quarter."""
+    candidates: list[dict[str, Any]] = []
+    for unit, observations in fact.get("units", {}).items():
+        if unit != "USD":
+            continue
+        for obs in observations:
+            if (obs.get("form") != "10-Q" or obs.get("fp") != quarter
+                    or obs.get("fy") != year):
+                continue
+            if not str(obs.get("end", "")).startswith(str(year)):
+                continue
+            candidates.append(obs)
+    return candidates
+
+
+def _duration_days(obs: dict[str, Any]) -> int | None:
+    start = obs.get("start")
+    if not start:
+        return None
+    return (date.fromisoformat(obs["end"]) - date.fromisoformat(start)).days
+
+
+def discrete_quarter_observation(fact: dict[str, Any], year: int, quarter: str) -> dict[str, Any] | None:
+    """A single-quarter (~90-day) duration observation -- never a YTD-cumulative one."""
+    return best_observation([
+        obs for obs in quarter_candidates(fact, year, quarter)
+        if (duration := _duration_days(obs)) is not None and 75 <= duration <= 100
+    ])
+
+
+def ytd_quarter_observation(fact: dict[str, Any], year: int, quarter: str) -> dict[str, Any] | None:
+    """The YTD-cumulative-through-this-quarter observation (duration > 100 days).
+
+    For Q1, YTD(Q1) == discrete Q1 (both ~90 days), so this deliberately returns
+    None for Q1 -- callers needing YTD(Q1) should use
+    discrete_quarter_observation(fact, year, "Q1") instead.
+    """
+    return best_observation([
+        obs for obs in quarter_candidates(fact, year, quarter)
+        if (duration := _duration_days(obs)) is not None and duration > 100
+    ])
+
+
+def quarterly_flow_observation(
+    fact: dict[str, Any], year: int, quarter: str
+) -> tuple[dict[str, Any] | None, bool]:
+    """Resolve a flow metric for one quarter. Returns ``(observation, used_ytd_fallback)``.
+
+    Prefers a discrete single-quarter observation (present for BAC/JPM/PNC/SIVB
+    across 2021-2023 for every flow concept used here). Falls back to
+    YTD(quarter) - YTD(previous quarter) only if no discrete observation exists.
+    The Q3 fallback must subtract genuine YTD(Q2) (~180 days), not discrete Q2
+    (~90 days) -- these are different numbers.
+    """
+    discrete = discrete_quarter_observation(fact, year, quarter)
+    if discrete:
+        return discrete, False
+    current_ytd = ytd_quarter_observation(fact, year, quarter)
+    if not current_ytd:
+        return None, False
+    if quarter == "Q1":
+        return current_ytd, False  # YTD(Q1) IS the discrete Q1 value; no real subtraction
+    if quarter == "Q2":
+        prior = discrete_quarter_observation(fact, year, "Q1")  # YTD(Q1) == discrete Q1
+    elif quarter == "Q3":
+        prior = ytd_quarter_observation(fact, year, "Q2")  # must be genuine YTD(Q2)
+    else:
+        prior = None
+    if not prior:
+        return None, False
+    synthesized = {
+        "val": current_ytd["val"] - prior["val"],
+        "end": current_ytd["end"],
+        "filed": current_ytd.get("filed"),
+        "accn": current_ytd.get("accn"),
+    }
+    return synthesized, True
+
+
+def extract_quarterly_metric_value(
+    facts: dict[str, Any], metric: str, year: int, quarter: str
+) -> dict[str, Any] | None:
+    is_flow = metric in FLOW_METRICS
+    for concept in METRICS[metric]:
+        fact = concept_fact(facts, concept)
+        if not fact:
+            continue
+        if is_flow:
+            observation, used_fallback = quarterly_flow_observation(fact, year, quarter)
+        else:
+            observation, used_fallback = best_observation(quarter_candidates(fact, year, quarter)), False
+        if observation:
+            result = {
+                "value_usd": observation["val"],
+                "concept": concept,
+                "end_date": observation["end"],
+                "filed": observation.get("filed"),
+                "accession_number": observation.get("accn"),
+            }
+            if used_fallback:
+                prior_quarter = {"Q2": "Q1", "Q3": "Q2"}[quarter]
+                result["calculation"] = f"YTD({quarter}) - YTD({prior_quarter})"
+            return result
+    return None
+
+
+def extract_company_quarterly(path: Path, years: tuple[int, ...] = QUARTERLY_YEARS) -> dict[int, dict[str, Any]]:
+    """Extract EDGAR-sourced quarterly (10-Q) metrics, one output record per year.
+
+    Only Q1-Q3 are ever populated: no 10-Q is filed for Q4, which is instead
+    covered by the 10-K (mirrors the existing PDF-derived quarterly output).
+    """
+    raw = json.loads(path.read_text(encoding="utf-8"))
+    facts = raw["facts"]
+    outputs: dict[int, dict[str, Any]] = {}
+    for year in years:
+        quarterly_metrics: dict[str, Any] = {}
+        for quarter in ("Q1", "Q2", "Q3"):
+            metrics = {
+                metric: extract_quarterly_metric_value(facts, metric, year, quarter)
+                for metric in METRICS
+            }
+            interest = metrics["interest_income"]
+            noninterest = metrics["noninterest_income"]
+            metrics["interest_income_plus_noninterest_income"] = (
+                {"value_usd": interest["value_usd"] + noninterest["value_usd"],
+                 "calculation": "interest_income + noninterest_income"}
+                if interest and noninterest else None
+            )
+            quarterly_metrics[quarter] = metrics
+        has_data = any(value is not None for q in quarterly_metrics.values() for value in q.values())
+        if has_data:
+            outputs[year] = {
+                "cik": str(raw.get("cik", "")).zfill(10),
+                "company_name": raw.get("entityName"),
+                "source_file": path.name,
+                "currency": "USD",
+                "quarterly_metrics": quarterly_metrics,
+            }
+    return outputs
 
 
 def is_pdf_derived_10k(path: Path) -> bool:
@@ -443,8 +614,17 @@ def main() -> None:
         raise SystemExit(f"No JSON files found at: {args.input}")
     if args.quarterly:
         pdf_10q_files = [file for file in files if is_pdf_derived_10q(file)]
-        outputs = extract_pdf_10q_companies(pdf_10q_files)
-        ticker = args.input.parent.name if args.input.name.lower() == "10-q" else args.input.name
+        if pdf_10q_files:
+            outputs = extract_pdf_10q_companies(pdf_10q_files)
+            ticker = args.input.parent.name if args.input.name.lower() == "10-q" else args.input.name
+        elif len(files) == 1 and is_edgar_companyfacts(files[0]):
+            outputs = extract_company_quarterly(files[0])
+            ticker = files[0].stem
+        else:
+            raise SystemExit(
+                f"No recognized quarterly input (PDF-derived 10-Q or EDGAR companyfacts) "
+                f"found at: {args.input}"
+            )
         output_dir = args.output or Path("data/processed/10-Q") / ticker
         output_dir.mkdir(parents=True, exist_ok=True)
         for year, output in outputs.items():

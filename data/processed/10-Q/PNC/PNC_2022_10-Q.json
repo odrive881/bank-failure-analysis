@@ -1,0 +1,215 @@
+{
+  "cik": "0000713676",
+  "company_name": "PNC FINANCIAL SERVICES GROUP, INC.",
+  "source_file": "PNC.json",
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 541246000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "net_income": {
+        "value_usd": 1429000000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "stockholders_equity": {
+        "value_usd": 49181000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "noninterest_expense": {
+        "value_usd": 3172000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "interest_income": {
+        "value_usd": 2914000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "noninterest_income": {
+        "value_usd": 1888000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 450197000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -5731000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "net_interest_income": {
+        "value_usd": 2804000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-04",
+        "accession_number": "0000713676-22-000047"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 4802000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 540786000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "net_income": {
+        "value_usd": 1496000000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "stockholders_equity": {
+        "value_usd": 47652000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "noninterest_expense": {
+        "value_usd": 3244000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "interest_income": {
+        "value_usd": 3281000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "noninterest_income": {
+        "value_usd": 2065000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 440811000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -8358000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "net_interest_income": {
+        "value_usd": 3051000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-02",
+        "accession_number": "0000713676-22-000072"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 5346000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 559477000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "net_income": {
+        "value_usd": 1640000000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "stockholders_equity": {
+        "value_usd": 46688000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "noninterest_expense": {
+        "value_usd": 3280000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "interest_income": {
+        "value_usd": 4132000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "noninterest_income": {
+        "value_usd": 2074000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 438194000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -10486000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "net_interest_income": {
+        "value_usd": 3475000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-02",
+        "accession_number": "0000713676-22-000092"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 6206000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

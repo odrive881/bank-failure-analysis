@@ -156,6 +156,10 @@ def standardize():
 
 
 QUARTERLY_STANDARDIZATION_JOBS = [
+    ("data/raw/edgar_companyfacts/BAC.json", "data/processed/10-Q/BAC"),
+    ("data/raw/edgar_companyfacts/JPM.json", "data/processed/10-Q/JPM"),
+    ("data/raw/edgar_companyfacts/PNC.json", "data/processed/10-Q/PNC"),
+    ("data/raw/edgar_companyfacts/SIVB.json", "data/processed/10-Q/SIVB"),
     ("data/raw/edgar_companyfacts/FRCB/10-Q", "data/processed/10-Q/FRCB"),
     ("data/raw/edgar_companyfacts/SBNY/10-Q", "data/processed/10-Q/SBNY"),
 ]

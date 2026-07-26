@@ -1,0 +1,215 @@
+{
+  "cik": "0000719739",
+  "company_name": "SVB Financial Group",
+  "source_file": "SIVB.json",
+  "currency": "USD",
+  "quarterly_metrics": {
+    "Q1": {
+      "total_assets": {
+        "value_usd": 142346620000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "net_income": {
+        "value_usd": 561764000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "stockholders_equity": {
+        "value_usd": 9894892000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "noninterest_expense": {
+        "value_usd": 636001000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "interest_income": {
+        "value_usd": 678746000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "noninterest_income": {
+        "value_usd": 744180000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 124150106000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": 20960000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "net_interest_income": {
+        "value_usd": 659579000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2021-03-31",
+        "filed": "2021-05-10",
+        "accession_number": "0000719739-21-000036"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1422926000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q2": {
+      "total_assets": {
+        "value_usd": 163399000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "net_income": {
+        "value_usd": 628000000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "stockholders_equity": {
+        "value_usd": 11667000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "noninterest_expense": {
+        "value_usd": 653000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "interest_income": {
+        "value_usd": 751000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "noninterest_income": {
+        "value_usd": 761000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 145838000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": 142000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "net_interest_income": {
+        "value_usd": 728000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2021-06-30",
+        "filed": "2021-08-06",
+        "accession_number": "0000719739-21-000060"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1512000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    },
+    "Q3": {
+      "total_assets": {
+        "value_usd": 190996000000,
+        "concept": "us-gaap:Assets",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "net_income": {
+        "value_usd": 475000000,
+        "concept": "us-gaap:ProfitLoss",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "stockholders_equity": {
+        "value_usd": 14300000000,
+        "concept": "us-gaap:StockholdersEquity",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "noninterest_expense": {
+        "value_usd": 879000000,
+        "concept": "us-gaap:NoninterestExpense",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "interest_income": {
+        "value_usd": 884000000,
+        "concept": "us-gaap:InterestAndDividendIncomeOperating",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "noninterest_income": {
+        "value_usd": 672000000,
+        "concept": "us-gaap:NoninterestIncome",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 171182000000,
+        "concept": "us-gaap:Deposits",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": 65000000,
+        "concept": "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "net_interest_income": {
+        "value_usd": 852000000,
+        "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2021-09-30",
+        "filed": "2021-11-08",
+        "accession_number": "0000719739-21-000071"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1556000000,
+        "calculation": "interest_income + noninterest_income"
+      }
+    }
+  }
+}

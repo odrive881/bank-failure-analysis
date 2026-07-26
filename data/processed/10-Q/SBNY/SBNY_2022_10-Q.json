@@ -244,6 +244,93 @@
         "value_usd": 1020104000.0,
         "calculation": "interest_income + noninterest_income"
       }
+    },
+    "Q4": {
+      "total_assets": {
+        "value_usd": 110363651000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "net_income": {
+        "value_usd": 300846000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "stockholders_equity": {
+        "value_usd": 8013101000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "noninterest_expense": {
+        "value_usd": 233311000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "interest_income": {
+        "value_usd": 1157240000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "noninterest_income": {
+        "value_usd": 45220000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "total_deposits_consolidated": {
+        "value_usd": 88589727000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "accumulated_other_comprehensive_income_loss": {
+        "value_usd": -1997240000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "net_interest_income": {
+        "value_usd": 638679000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "interest_income_plus_noninterest_income": {
+        "value_usd": 1202460000.0,
+        "calculation": "interest_income + noninterest_income"
+      }
     }
   }
 }

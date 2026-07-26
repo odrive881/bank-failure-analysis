@@ -179,6 +179,10 @@ def standardize_quarterly():
         ])
 
 
+def derive_q4():
+    run([PYTHON, "derive_q4_metrics.py"])
+
+
 def ingest():
     run([PYTHON, "processed_data_ingestion.py"])
 
@@ -189,6 +193,7 @@ STAGES = [
     ("Parsing FRCB/SBNY 10-Q PDFs", parse_quarterly_pdfs),
     ("Standardizing raw data into annual metrics", standardize),
     ("Standardizing raw data into quarterly metrics", standardize_quarterly),
+    ("Deriving Q4 metrics (annual 10-K minus 10-Q Q1-Q3)", derive_q4),
     ("Assembling long-format parquet", ingest),
 ]
 

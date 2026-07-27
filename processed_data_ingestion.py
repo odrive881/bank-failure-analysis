@@ -64,19 +64,27 @@ def load_quarterly_json(filepath):
     return records
 
 
-def main():
-    all_records = []
-
-    for json_file in folder.glob("*.json"):
-        all_records.extend(load_json(json_file))
-
-    for json_file in folder.glob("10-Q/*/*.json"):
-        all_records.extend(load_quarterly_json(json_file))
-
-    df = pd.DataFrame(all_records)
+def build_dataframe(records):
+    df = pd.DataFrame(records)
     df["source_file"] = df["source_file"].apply(lambda x: str(x))
     df["value_usd"] = df["value_usd"].astype("int64")
-    df.to_parquet("data/processed/processed_dataframes/DataframeLong.parquet")
+    return df
+
+
+def main():
+    annual_records = []
+    for json_file in folder.glob("*.json"):
+        annual_records.extend(load_json(json_file))
+
+    quarterly_records = []
+    for json_file in folder.glob("10-Q/*/*.json"):
+        quarterly_records.extend(load_quarterly_json(json_file))
+
+    annual_df = build_dataframe(annual_records)
+    annual_df.to_parquet("data/processed/processed_dataframes/DataframeLong.parquet")
+
+    quarterly_df = build_dataframe(quarterly_records)
+    quarterly_df.to_parquet("data/processed/processed_dataframes/DataframeLongQuarterly.parquet")
 
 
 if __name__ == "__main__":

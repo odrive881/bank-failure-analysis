@@ -1,10 +1,7 @@
 {
   "cik": null,
-  "company_name": "Signature Banks",
+  "company_name": "Signature Bank",
   "source_file": [
-    "parsed_financials_Signature Banks_10Q_2022_FINAL.json",
-    "parsed_financials_Signature Banks_10Q_2022_Q1.json",
-    "parsed_financials_Signature Banks_10Q_2022_Q2.json",
     "parsed_financials_Signature_Bank_10-Q_2022_Q1.json",
     "parsed_financials_Signature_Bank_10-Q_2022_Q2.json",
     "parsed_financials_Signature_Bank_10-Q_2022_Q3.json"

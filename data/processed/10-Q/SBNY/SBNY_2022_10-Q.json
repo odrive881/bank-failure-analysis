@@ -81,6 +81,14 @@
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 573,559"
       },
+      "interest_expense_deposits": {
+        "value_usd": 46040000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 46,040"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 676569000.0,
         "calculation": "interest_income + noninterest_income"
@@ -159,6 +167,14 @@
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 649,106"
       },
+      "interest_expense_deposits": {
+        "value_usd": 106304000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 106,304"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 812241000.0,
         "calculation": "interest_income + noninterest_income"
@@ -236,6 +252,14 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 673,990"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 286036000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 286,036"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1020104000.0,
@@ -317,6 +341,15 @@
       },
       "net_interest_income": {
         "value_usd": 638679000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 475183000.0,
         "concept": "calculated",
         "end_date": "December 31, 2022",
         "filed": "calculated",

@@ -68,6 +68,13 @@
         "filed": "2021-02-26",
         "accession_number": "0000713676-21-000025"
       },
+      "interest_expense_deposits": {
+        "value_usd": 643000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2020-12-31",
+        "filed": "2021-02-26",
+        "accession_number": "0000713676-21-000025"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 18262000000,
         "calculation": "interest_income + noninterest_income"
@@ -133,6 +140,13 @@
       "net_interest_income": {
         "value_usd": 10647000000,
         "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2021-12-31",
+        "filed": "2022-02-25",
+        "accession_number": "0000713676-22-000019"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 126000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
         "end_date": "2021-12-31",
         "filed": "2022-02-25",
         "accession_number": "0000713676-22-000019"
@@ -206,6 +220,13 @@
         "filed": "2023-02-22",
         "accession_number": "0000713676-23-000020"
       },
+      "interest_expense_deposits": {
+        "value_usd": 1267000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2022-12-31",
+        "filed": "2023-02-22",
+        "accession_number": "0000713676-23-000020"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 23542000000,
         "calculation": "interest_income + noninterest_income"
@@ -271,6 +292,13 @@
       "net_interest_income": {
         "value_usd": 13916000000,
         "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2023-12-31",
+        "filed": "2024-02-21",
+        "accession_number": "0000713676-24-000028"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 6609000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
         "end_date": "2023-12-31",
         "filed": "2024-02-21",
         "accession_number": "0000713676-24-000028"

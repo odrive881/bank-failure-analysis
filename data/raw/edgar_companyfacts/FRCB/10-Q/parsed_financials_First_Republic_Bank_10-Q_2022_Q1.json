@@ -50,6 +50,15 @@
           "column_2": 1022000000.0
         }
       },
+      "interest_expense_deposits": {
+        "label_matched": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                20        28",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "column_1": 20000000.0,
+          "column_2": 28000000.0
+        }
+      },
       "net_interest_income": {
         "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             1,145          939",
         "units": "USD",

@@ -80,6 +80,14 @@
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 1,880,524"
       },
+      "interest_expense_deposits": {
+        "value_usd": 297349000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 210,644"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2006894000.0,
         "calculation": "interest_income + noninterest_income"
@@ -158,6 +166,14 @@
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 1,880,524"
       },
+      "interest_expense_deposits": {
+        "value_usd": 210644000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 210,644"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2311273000.0,
         "calculation": "interest_income + noninterest_income"
@@ -235,6 +251,14 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Net interest income before provision for credit losses 2,535,334"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 913563000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits 913,563"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 3711374000.0,

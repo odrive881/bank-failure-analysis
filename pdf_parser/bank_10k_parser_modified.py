@@ -16,6 +16,7 @@ Financial Condition and the Consolidated Statement(s) of Income):
     - Total Noninterest Income
     - Net Interest Income (before provision for credit losses)
     - Interest Income + Noninterest Income  (derived: sum of the two above)
+    - Interest Expense on Deposits
     - Total Deposits (consolidated)
     - Accumulated Other Comprehensive Income / (Loss)
 
@@ -339,6 +340,20 @@ LINE_ITEMS = [
         re.compile(r"^Net\s*interest\s*income\b(?!\s*after)", re.IGNORECASE),
     ),
     LineItemSpec(
+        "interest_expense_deposits", "Interest Expense on Deposits",
+        # The "Deposits" sub-line under the "Interest expense:" header in the
+        # income statement (distinct from "Total Deposits" on the balance
+        # sheet, which uses a different, Total-prefixed pattern and lives in
+        # a different section entirely). Balance sheets also use a bare
+        # "Deposits" / "Deposits:" subheading (introducing an itemized
+        # deposit-type breakdown below it, e.g. "Non-interest-bearing" /
+        # "Certificates of deposit") with no trailing number of its own --
+        # requiring a number-like character immediately after the word
+        # excludes that subheading while still matching the real data row,
+        # and avoids tripping _looks_misaligned()'s false-positive check.
+        re.compile(r"^Deposits\b\s*(\.|\$|—|--|\d)", re.IGNORECASE),
+    ),
+    LineItemSpec(
         "total_deposits", "Total Deposits",
         re.compile(r"^Total\s*[Dd]eposits\b", re.IGNORECASE),
     ),
@@ -571,7 +586,7 @@ def parse_filing(pdf_path: str, bank_override: Optional[str] = None) -> dict:
             is_section,
             [s for s in LINE_ITEMS if s.key in (
                 "net_income", "noninterest_expense", "interest_income",
-                "noninterest_income", "net_interest_income",
+                "noninterest_income", "net_interest_income", "interest_expense_deposits",
             )],
         )
         for key, info in is_items.items():
@@ -582,7 +597,7 @@ def parse_filing(pdf_path: str, bank_override: Optional[str] = None) -> dict:
                 "values_by_period": build_period_value_map(info["raw_values"], is_periods, is_mult),
             }
         for key in ("net_income", "noninterest_expense", "interest_income",
-                    "noninterest_income", "net_interest_income"):
+                    "noninterest_income", "net_interest_income", "interest_expense_deposits"):
             if key not in data:
                 warnings.append(f"Could not locate line item '{key}' in income statement section")
     else:

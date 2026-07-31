@@ -80,6 +80,14 @@
         "accession_number": null,
         "source_label": "Netinterestincome ......................................................... 4,114"
       },
+      "interest_expense_deposits": {
+        "value_usd": 276000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits.................................................................. 95"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 4508000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -158,6 +166,14 @@
         "accession_number": null,
         "source_label": "Netinterestincome ......................................................... 4,114"
       },
+      "interest_expense_deposits": {
+        "value_usd": 95000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits.................................................................. 95"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 5305000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -235,6 +251,14 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Netinterestincome ......................................................... 4,834"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 654000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits.................................................................. 654"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 6753000000.0,

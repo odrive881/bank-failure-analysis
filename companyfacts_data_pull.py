@@ -1,6 +1,7 @@
 import json
 import os
 import time
+from datetime import date
 
 import requests
 
@@ -15,6 +16,7 @@ headers = {
 COMPANYFACTS_DIR = "data/raw/edgar_companyfacts"
 CALL_REPORTS_DIR = "data/raw/FDIC_Call_Reports"
 FAILURE_DATA_DIR = "data/raw/Failure_data"
+FRED_DIR = "data/raw/fred"
 
 # ==========================================================
 # EDGAR Company Facts
@@ -91,6 +93,33 @@ def fetch_failure_data(cert_num, credentials):
 
 
 # ==========================================================
+# FRED Effective Fed Funds Rate (deposit-beta benchmark rate)
+# ==========================================================
+
+def fetch_fed_funds_rate(credentials):
+    # Public CSV export, no API key required -- unlike the JSON endpoints
+    # above, so this doesn't go through save_api_data()'s json.dump path.
+    url = (
+        "https://fred.stlouisfed.org/graph/fredgraph.csv"
+        "?id=DFF&cosd=2020-01-01"
+        f"&coed={date.today().isoformat()}"
+    )
+    response = requests.get(url, headers=credentials)
+    response.raise_for_status()
+    return response.text
+
+
+def save_fed_funds_rate(credentials, output_dir=FRED_DIR):
+    os.makedirs(output_dir, exist_ok=True)
+    filepath = os.path.join(output_dir, "DFF.csv")
+    if os.path.exists(filepath):
+        return
+    csv_text = fetch_fed_funds_rate(credentials)
+    with open(filepath, "w", encoding="utf-8") as outfile:
+        outfile.write(csv_text)
+
+
+# ==========================================================
 # Save Function
 # ==========================================================
 
@@ -135,3 +164,5 @@ save_api_data(
     FAILURE_DATA_DIR,
     fetch_failure_data,
 )
+
+save_fed_funds_rate(headers)

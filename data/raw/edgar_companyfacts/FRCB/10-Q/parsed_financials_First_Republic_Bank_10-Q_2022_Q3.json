@@ -52,6 +52,17 @@
           "column_4": 3218000000.0
         }
       },
+      "interest_expense_deposits": {
+        "label_matched": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169 23 226 75",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 169000000.0,
+          "2021": 23000000.0,
+          "column_3": 226000000.0,
+          "column_4": 75000000.0
+        }
+      },
       "net_interest_income": {
         "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,269 1,052 3,660 2,994",
         "units": "USD",

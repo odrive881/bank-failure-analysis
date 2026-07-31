@@ -50,6 +50,15 @@
           "2020": 956121000.0
         }
       },
+      "interest_expense_deposits": {
+        "label_matched": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27,571 118,845",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 27571000.0,
+          "2020": 118845000.0
+        }
+      },
       "net_interest_income": {
         "label_matched": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 938,782 752,132",
         "units": "USD",

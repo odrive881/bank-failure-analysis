@@ -13,6 +13,7 @@ __pycache__/
 
 # Claude Code local settings (machine-specific)
 .claude/settings.local.json
+CLAUDE.md
 
 # Secrets / local config
 .env

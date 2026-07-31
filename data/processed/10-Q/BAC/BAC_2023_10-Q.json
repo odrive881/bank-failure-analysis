@@ -68,6 +68,13 @@
         "filed": "2023-05-01",
         "accession_number": "0000070858-23-000142"
       },
+      "interest_expense_deposits": {
+        "value_usd": 4314000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2023-03-31",
+        "filed": "2023-05-01",
+        "accession_number": "0000070858-23-000142"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 40465000000,
         "calculation": "interest_income + noninterest_income"
@@ -137,6 +144,13 @@
         "filed": "2023-07-31",
         "accession_number": "0000070858-23-000176"
       },
+      "interest_expense_deposits": {
+        "value_usd": 5785000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2023-06-30",
+        "filed": "2023-07-31",
+        "accession_number": "0000070858-23-000176"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 43393000000,
         "calculation": "interest_income + noninterest_income"
@@ -202,6 +216,13 @@
       "net_interest_income": {
         "value_usd": 14379000000,
         "concept": "us-gaap:InterestIncomeExpenseNet",
+        "end_date": "2023-09-30",
+        "filed": "2023-10-31",
+        "accession_number": "0000070858-23-000272"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 7340000000,
+        "concept": "us-gaap:InterestExpenseDeposits",
         "end_date": "2023-09-30",
         "filed": "2023-10-31",
         "accession_number": "0000070858-23-000272"
@@ -278,6 +299,14 @@
       },
       "net_interest_income": {
         "value_usd": 13946000000,
+        "concept": "calculated",
+        "end_date": "December 31, 2023",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 8724000000,
         "concept": "calculated",
         "end_date": "December 31, 2023",
         "filed": "calculated",

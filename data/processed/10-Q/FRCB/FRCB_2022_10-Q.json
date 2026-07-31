@@ -84,6 +84,14 @@
         "accession_number": null,
         "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .             1,145"
       },
+      "interest_expense_deposits": {
+        "value_usd": 20000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "March 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                20"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1440000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -162,6 +170,14 @@
         "accession_number": null,
         "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,246"
       },
+      "interest_expense_deposits": {
+        "value_usd": 37000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "June 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1579000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -239,6 +255,14 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Net interest income . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1,269"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 169000000.0,
+        "concept": "pdf-derived:interest_expense_deposits",
+        "end_date": "September 30, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 169"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1772000000.0,
@@ -320,6 +344,15 @@
       },
       "net_interest_income": {
         "value_usd": 1174000000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY - (Q1 + Q2 + Q3)",
+        "source_label": "calculated"
+      },
+      "interest_expense_deposits": {
+        "value_usd": 428000000.0,
         "concept": "calculated",
         "end_date": "December 31, 2022",
         "filed": "calculated",

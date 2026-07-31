@@ -70,11 +70,15 @@ METRICS: dict[str, list[str]] = {
         "us-gaap:InterestIncomeExpenseNet",
         "us-gaap:InterestIncomeExpenseOperatingNet",
     ],
+    # Interest expense specifically on deposits (excludes borrowings), used to
+    # compute a deposit-specific cost-of-funds / deposit-beta metric rather
+    # than a blended one. Confirmed present for JPM/BAC/PNC/SIVB.
+    "interest_expense_deposits": ["us-gaap:InterestExpenseDeposits"],
 }
 
 FLOW_METRICS = {
     "net_income", "noninterest_expense", "interest_income", "noninterest_income",
-    "net_interest_income",
+    "net_interest_income", "interest_expense_deposits",
 }
 
 # Keys used by the PDF parser are intentionally mapped to the same output
@@ -99,6 +103,7 @@ PDF_METRICS = {
     "total_deposits_consolidated": "total_deposits",
     "accumulated_other_comprehensive_income_loss": "accumulated_oci",
     "net_interest_income": "net_interest_income",
+    "interest_expense_deposits": "interest_expense_deposits",
 }
 
 # A source row contains all comparative-period columns.  Processed output is

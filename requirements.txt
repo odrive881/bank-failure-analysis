@@ -7,6 +7,7 @@ fastparquet==2026.5.0
 pdfplumber==0.11.10
 
 # Analysis notebook (data_analysis.ipynb)
+yfinance==1.5.2
 matplotlib==3.11.1
 seaborn==0.13.2
 scipy==1.18.0

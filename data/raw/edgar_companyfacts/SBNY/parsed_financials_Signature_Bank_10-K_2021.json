@@ -51,6 +51,16 @@
           "2019": 1911676000.0
         }
       },
+      "interest_expense_deposits": {
+        "label_matched": "Deposits 210,644 297,349 440,730",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 210644000.0,
+          "2020": 297349000.0,
+          "2019": 440730000.0
+        }
+      },
       "net_interest_income": {
         "label_matched": "Net interest income before provision for credit losses 1,880,524 1,519,092 1,311,593",
         "units": "USD",

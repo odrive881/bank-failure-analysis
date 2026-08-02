@@ -45,12 +45,6 @@ METRICS: dict[str, list[str]] = {
     "net_income": ["us-gaap:NetIncomeLoss", "us-gaap:ProfitLoss"],
     "stockholders_equity": ["us-gaap:StockholdersEquity"],
     "noninterest_expense": ["us-gaap:NoninterestExpense"],
-    # JPM does not tag InterestAndDividendIncomeOperating at all; it uses
-    # InterestIncomeOperating instead. Confirmed live against JPM's raw
-    # companyfacts data (FY2020-2023 values are consistent with JPM's actual
-    # total interest income), and against the fact that JPM's interest_income
-    # was null in every already-shipped annual file before this fallback was
-    # added.
     "interest_income": [
         "us-gaap:InterestAndDividendIncomeOperating",
         "us-gaap:InterestIncomeOperating",
@@ -60,26 +54,11 @@ METRICS: dict[str, list[str]] = {
     "accumulated_other_comprehensive_income_loss": [
         "us-gaap:AccumulatedOtherComprehensiveIncomeLossNetOfTax"
     ],
-    # Net interest income (interest income less interest expense, before
-    # provision for credit losses). Most bank holding companies use
-    # InterestIncomeExpenseNet; InterestIncomeExpenseOperatingNet is kept as
-    # a fallback for filers (e.g. certain REITs/thrifts) that tag it there
-    # instead. Unverified against a live SEC response as of this edit --
-    # confirm on your first real run (see note below extract_company).
     "net_interest_income": [
         "us-gaap:InterestIncomeExpenseNet",
         "us-gaap:InterestIncomeExpenseOperatingNet",
     ],
-    # Interest expense specifically on deposits (excludes borrowings), used to
-    # compute a deposit-specific cost-of-funds / deposit-beta metric rather
-    # than a blended one. Confirmed present for JPM/BAC/PNC/SIVB.
     "interest_expense_deposits": ["us-gaap:InterestExpenseDeposits"],
-    # Held-to-maturity securities stay at amortized cost on the balance sheet, so their
-    # unrealized losses don't show up in AOCI the way AFS securities' do. JPM/BAC/PNC stopped
-    # filing the plain HeldToMaturitySecurities tag after FY2021 (a CECL-era taxonomy change) in
-    # favor of the tag below; the old tag is kept as a fallback for BAC/PNC's FY2020 value (which
-    # only exists under the old tag) and for SIVB (which used only the old tag through its last
-    # full fiscal year, FY2022). FRCB/SBNY (PDF-sourced) don't have this extracted yet.
     "held_to_maturity_securities": [
         "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestAfterAllowanceForCreditLoss",
         "us-gaap:HeldToMaturitySecurities",

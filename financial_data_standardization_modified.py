@@ -74,6 +74,17 @@ METRICS: dict[str, list[str]] = {
     # compute a deposit-specific cost-of-funds / deposit-beta metric rather
     # than a blended one. Confirmed present for JPM/BAC/PNC/SIVB.
     "interest_expense_deposits": ["us-gaap:InterestExpenseDeposits"],
+    # Held-to-maturity securities stay at amortized cost on the balance sheet, so their
+    # unrealized losses don't show up in AOCI the way AFS securities' do. JPM/BAC/PNC stopped
+    # filing the plain HeldToMaturitySecurities tag after FY2021 (a CECL-era taxonomy change) in
+    # favor of the tag below; the old tag is kept as a fallback for BAC/PNC's FY2020 value (which
+    # only exists under the old tag) and for SIVB (which used only the old tag through its last
+    # full fiscal year, FY2022). FRCB/SBNY (PDF-sourced) don't have this extracted yet.
+    "held_to_maturity_securities": [
+        "us-gaap:DebtSecuritiesHeldToMaturityExcludingAccruedInterestAfterAllowanceForCreditLoss",
+        "us-gaap:HeldToMaturitySecurities",
+    ],
+    "held_to_maturity_securities_fair_value": ["us-gaap:HeldToMaturitySecuritiesFairValue"],
 }
 
 FLOW_METRICS = {

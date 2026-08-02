@@ -75,6 +75,20 @@
         "filed": "2021-03-01",
         "accession_number": "0000719739-21-000023"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 16592545000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2020-12-31",
+        "filed": "2021-03-01",
+        "accession_number": "0000719739-21-000023"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 17216871000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2020-12-31",
+        "filed": "2021-03-01",
+        "accession_number": "0000719739-21-000023"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 4081758000,
         "calculation": "interest_income + noninterest_income"
@@ -147,6 +161,20 @@
       "interest_expense_deposits": {
         "value_usd": 62000000,
         "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2021-12-31",
+        "filed": "2022-03-01",
+        "accession_number": "0000719739-22-000023"
+      },
+      "held_to_maturity_securities": {
+        "value_usd": 98202000000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2021-12-31",
+        "filed": "2022-03-01",
+        "accession_number": "0000719739-22-000023"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 97227000000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
         "end_date": "2021-12-31",
         "filed": "2022-03-01",
         "accession_number": "0000719739-22-000023"
@@ -227,6 +255,20 @@
         "filed": "2023-02-24",
         "accession_number": "0000719739-23-000021"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 91327000000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2022-12-31",
+        "filed": "2023-02-24",
+        "accession_number": "0000719739-23-000021"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 76169000000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2022-12-31",
+        "filed": "2023-02-24",
+        "accession_number": "0000719739-23-000021"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 7401000000,
         "calculation": "interest_income + noninterest_income"
@@ -243,6 +285,8 @@
       "accumulated_other_comprehensive_income_loss": null,
       "net_interest_income": null,
       "interest_expense_deposits": null,
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
       "interest_income_plus_noninterest_income": null
     }
   }

@@ -41,6 +41,24 @@
           "2021": 7840618000.0
         }
       },
+      "held_to_maturity_securities": {
+        "label_matched": "Securities held-to-maturity (SBNY-style disclosure)",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 7780374000.0,
+          "2021": 4998281000.0
+        }
+      },
+      "held_to_maturity_securities_fair_value": {
+        "label_matched": "Securities held-to-maturity (SBNY-style disclosure)",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2022": 7018200000.0,
+          "2021": 4944777000.0
+        }
+      },
       "interest_income": {
         "label_matched": "Total interest income 3,550,337 2,190,381 1,931,646",
         "units": "USD",

@@ -364,6 +364,114 @@ LINE_ITEMS = [
 ]
 
 
+# --------------------------------------------------------------------------
+# Held-to-maturity securities (carrying value + fair value)
+# --------------------------------------------------------------------------
+#
+# Unlike the LINE_ITEMS above (a label followed by trailing column numbers on
+# one physical line), FRCB and SBNY both disclose HTM carrying value *and*
+# fair value as a single balance-sheet row whose label wraps across 2-3
+# physical lines, with the fair-value figures embedded in running prose
+# rather than in a numeric column. Each bank phrases this differently, so
+# each gets its own regex; both are anchored to a short window of joined
+# lines (not the whole document) to keep false positives out, and use \s*
+# instead of \s+ between words for the same reason the rest of this parser
+# does -- pdfplumber's fallback text collapses inter-word spacing entirely
+# for some filings (e.g. FRCB's), while pdftotext -layout keeps it (e.g.
+# SBNY's).
+#
+# FRCB: "Debt securities held-to-maturity, net of allowance for credit
+# losses of $9 and $7, respectively (fair value of $23,422 and $17,964,
+# respectively) ....... 22,292 16,603" -- no explicit years; the two
+# trailing numbers are the carrying values, paired positionally with the
+# balance sheet's own detected column years (like every other LINE_ITEM).
+FRCB_HTM_RE = re.compile(
+    r"debt\s*securities\s*held-to-maturity,?\s*net\s*of\s*allowance\s*for\s*credit\s*losses\s*of\s*"
+    r"\$?\s*([\d,]+)\s*and\s*\$?\s*([\d,]+),?\s*"
+    r"respectively\s*\(\s*fair\s*value\s*of\s*\$?\s*([\d,]+)\s*and\s*\$?\s*([\d,]+),?\s*respectively\s*\)"
+    r"[.\s]*\$?\s*([\d,]+)\s+\$?\s*([\d,]+)",
+    re.IGNORECASE,
+)
+
+# SBNY: "Securities held-to-maturity (fair value $7,018,200 at December 31,
+# 2022 and\n$4,944,777 at December 31, 2021); (allowance for credit losses
+# $25 at\nDecember 31, 2022 and $56 at December 31, 2021) 7,780,374
+# 4,998,281" -- the two trailing carrying-value numbers land at the very
+# end, after an intervening allowance-for-credit-losses clause with its own
+# dollar figures. The non-greedy ".*?" skips over that clause: it can't
+# stop early since none of the allowance clause's own numbers are followed
+# by another bare number (they're each followed by a word), so the first
+# place two numbers appear back-to-back is the real carrying-value pair.
+# Years are stated explicitly for the fair values, unlike FRCB's phrasing.
+#
+# The final two captures require an actual comma-grouped amount
+# (\d{1,3}(?:,\d{3})+, e.g. "7,780,374") rather than the looser [\d,]+ used
+# elsewhere in this parser: with the loose pattern, the non-greedy ".*?"
+# stops on the very first digits-then-comma token it meets, which is "31,"
+# from the "...December 31, 2022..." date inside the intervening allowance
+# clause -- not a real dollar amount. Genuine carrying values in these
+# filings always carry thousands separators, so this excludes bare day/year
+# numbers while still matching the real trailing pair.
+SBNY_HTM_RE = re.compile(
+    r"securities\s*held-to-maturity\s*\(\s*fair\s*value\s*\$?\s*([\d,]+)\s*at\s*December\s*31,?\s*(\d{4})\s*and\s*"
+    r"\$?\s*([\d,]+)\s*at\s*December\s*31,?\s*(\d{4})\s*\)"
+    r".*?\$?\s*(\d{1,3}(?:,\d{3})+)\s+\$?\s*(\d{1,3}(?:,\d{3})+)",
+    re.IGNORECASE | re.DOTALL,
+)
+
+
+def extract_htm_securities(bs_section: str, bs_periods: list[str]) -> dict:
+    """Locate the held-to-maturity debt securities balance-sheet row and pull out
+    both its carrying value and its (prose-embedded) fair value.
+
+    Returns a dict with up to two keys, ``held_to_maturity_securities`` (carrying
+    value) and ``held_to_maturity_securities_fair_value``, each shaped like a
+    LINE_ITEMS result (``label_matched`` / ``raw_values`` keyed by period). Returns
+    an empty dict if no recognized disclosure is found.
+    """
+    lines = bs_section.splitlines()
+    anchor = re.compile(r"held-to-maturity", re.IGNORECASE)
+    for i, line in enumerate(lines):
+        if not anchor.search(line):
+            continue
+        window = "\n".join(lines[i:i + 3])
+
+        match = FRCB_HTM_RE.search(window)
+        if match:
+            fair_cur, fair_prior, carry_cur, carry_prior = match.group(3, 4, 5, 6)
+            label = "Debt securities held-to-maturity, net (FRCB-style disclosure)"
+            return {
+                "held_to_maturity_securities": {
+                    "label_matched": label,
+                    "raw_values": [parse_number(carry_cur), parse_number(carry_prior)],
+                },
+                "held_to_maturity_securities_fair_value": {
+                    "label_matched": label,
+                    "raw_values": [parse_number(fair_cur), parse_number(fair_prior)],
+                },
+            }
+
+        match = SBNY_HTM_RE.search(window)
+        if match:
+            # Years are stated explicitly here, but always agree with the balance
+            # sheet's own column order (current year first) -- kept positional
+            # (raw_values, zipped against bs_periods by the caller) rather than
+            # branching the output shape, since every other line item works that way.
+            fair_cur, _year_cur, fair_prior, _year_prior, carry_cur, carry_prior = match.groups()
+            label = "Securities held-to-maturity (SBNY-style disclosure)"
+            return {
+                "held_to_maturity_securities": {
+                    "label_matched": label,
+                    "raw_values": [parse_number(carry_cur), parse_number(carry_prior)],
+                },
+                "held_to_maturity_securities_fair_value": {
+                    "label_matched": label,
+                    "raw_values": [parse_number(fair_cur), parse_number(fair_prior)],
+                },
+            }
+    return {}
+
+
 def extract_line_items(section_text: str, specs: list[LineItemSpec]) -> dict:
     """Scan a statement section line-by-line and pull out numeric values
     for each requested line item spec."""
@@ -575,6 +683,17 @@ def parse_filing(pdf_path: str, bank_override: Optional[str] = None) -> dict:
         for key in ("total_assets", "stockholders_equity", "total_deposits", "accumulated_oci"):
             if key not in data:
                 warnings.append(f"Could not locate line item '{key}' in balance sheet section")
+
+        htm_items = extract_htm_securities(bs_section, bs_periods)
+        for key, info in htm_items.items():
+            data[key] = {
+                "label_matched": info["label_matched"],
+                "units": "USD",
+                "reported_scale": bs_units,
+                "values_by_period": build_period_value_map(info["raw_values"], bs_periods, bs_mult),
+            }
+        if not htm_items:
+            warnings.append("Could not locate held-to-maturity securities disclosure in balance sheet section")
     else:
         warnings.append("Balance sheet / statement of financial condition section not found")
 

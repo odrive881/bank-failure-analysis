@@ -88,6 +88,22 @@
         "accession_number": null,
         "source_label": "Deposits.................................................................. 95"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 16603000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 17964000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 4508000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -174,6 +190,22 @@
         "accession_number": null,
         "source_label": "Deposits.................................................................. 95"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 22292000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 23422000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 5305000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -259,6 +291,22 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Deposits.................................................................. 654"
+      },
+      "held_to_maturity_securities": {
+        "value_usd": 28348000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 23587000000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Debt securities held-to-maturity,"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 6753000000.0,

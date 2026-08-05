@@ -41,6 +41,24 @@
           "2020": 11751000000.0
         }
       },
+      "held_to_maturity_securities": {
+        "label_matched": "Debt securities held-to-maturity, net (FRCB-style disclosure)",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2021": 22292000000.0,
+          "2020": 16603000000.0
+        }
+      },
+      "held_to_maturity_securities_fair_value": {
+        "label_matched": "Debt securities held-to-maturity, net (FRCB-style disclosure)",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2021": 23422000000.0,
+          "2020": 17964000000.0
+        }
+      },
       "interest_income": {
         "label_matched": "Totalinterestincome .................................................... 4,385 3,853 3,579",
         "units": "USD",

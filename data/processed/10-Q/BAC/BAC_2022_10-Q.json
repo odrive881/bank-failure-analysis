@@ -313,6 +313,22 @@
         "accession_number": "calculated",
         "calculation": "FY - (Q1 + Q2 + Q3)"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 632825000000,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 524267000000,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 34926000000,
         "calculation": "interest_income + noninterest_income"

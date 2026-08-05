@@ -94,6 +94,8 @@ PDF_METRICS = {
     "accumulated_other_comprehensive_income_loss": "accumulated_oci",
     "net_interest_income": "net_interest_income",
     "interest_expense_deposits": "interest_expense_deposits",
+    "held_to_maturity_securities": "held_to_maturity_securities",
+    "held_to_maturity_securities_fair_value": "held_to_maturity_securities_fair_value",
 }
 
 # A source row contains all comparative-period columns.  Processed output is

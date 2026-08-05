@@ -88,6 +88,22 @@
         "accession_number": null,
         "source_label": "Deposits 210,644"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 2282830000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 2329378000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2006894000.0,
         "calculation": "interest_income + noninterest_income"
@@ -174,6 +190,22 @@
         "accession_number": null,
         "source_label": "Deposits 210,644"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 4998281000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 4944777000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2311273000.0,
         "calculation": "interest_income + noninterest_income"
@@ -259,6 +291,22 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Deposits 913,563"
+      },
+      "held_to_maturity_securities": {
+        "value_usd": 7780374000.0,
+        "concept": "pdf-derived:held_to_maturity_securities",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 7018200000.0,
+        "concept": "pdf-derived:held_to_maturity_securities_fair_value",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 3711374000.0,

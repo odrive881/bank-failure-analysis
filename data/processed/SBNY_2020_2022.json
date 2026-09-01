@@ -104,6 +104,22 @@
         "accession_number": null,
         "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
       },
+      "gross_loans": {
+        "value_usd": 48833098000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases 64,862,798"
+      },
+      "net_loans": {
+        "value_usd": 48324799000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2006894000.0,
         "calculation": "interest_income + noninterest_income"
@@ -206,6 +222,22 @@
         "accession_number": null,
         "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
       },
+      "gross_loans": {
+        "value_usd": 64862798000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases 64,862,798"
+      },
+      "net_loans": {
+        "value_usd": 64388409000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 2311273000.0,
         "calculation": "interest_income + noninterest_income"
@@ -307,6 +339,22 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Securities held-to-maturity (SBNY-style disclosure)"
+      },
+      "gross_loans": {
+        "value_usd": 74292404000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases 74,292,404"
+      },
+      "net_loans": {
+        "value_usd": 73802542000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans and leases,"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 3711374000.0,

@@ -5,6 +5,24 @@
     "filing_type": "10-K",
     "period_end_date": "December 31, 2022",
     "data": {
+      "gross_loans": {
+        "label_matched": "Loans .......................................................................... 166,868 134,956",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 166868000000.0,
+          "2021": 134956000000.0
+        }
+      },
+      "net_loans": {
+        "label_matched": "Loans,net .................................................................. 166,084 134,262",
+        "units": "USD",
+        "reported_scale": "millions",
+        "values_by_period": {
+          "2022": 166084000000.0,
+          "2021": 134262000000.0
+        }
+      },
       "total_assets": {
         "label_matched": "TotalAssets ................................................................ $212,639 $181,087",
         "units": "USD",

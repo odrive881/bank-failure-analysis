@@ -89,6 +89,20 @@
         "filed": "2021-02-24",
         "accession_number": "0000070858-21-000023"
       },
+      "gross_loans": {
+        "value_usd": 927861000000,
+        "concept": "us-gaap:NotesReceivableGross",
+        "end_date": "2020-12-31",
+        "filed": "2021-02-24",
+        "accession_number": "0000070858-21-000023"
+      },
+      "net_loans": {
+        "value_usd": 909059000000,
+        "concept": "us-gaap:NotesReceivableNet",
+        "end_date": "2020-12-31",
+        "filed": "2021-02-24",
+        "accession_number": "0000070858-21-000023"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 93753000000,
         "calculation": "interest_income + noninterest_income"
@@ -175,6 +189,20 @@
       "held_to_maturity_securities_fair_value": {
         "value_usd": 665890000000,
         "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2021-12-31",
+        "filed": "2022-02-22",
+        "accession_number": "0000070858-22-000062"
+      },
+      "gross_loans": {
+        "value_usd": 979124000000,
+        "concept": "us-gaap:NotesReceivableGross",
+        "end_date": "2021-12-31",
+        "filed": "2022-02-22",
+        "accession_number": "0000070858-22-000062"
+      },
+      "net_loans": {
+        "value_usd": 966737000000,
+        "concept": "us-gaap:NotesReceivableNet",
         "end_date": "2021-12-31",
         "filed": "2022-02-22",
         "accession_number": "0000070858-22-000062"
@@ -269,6 +297,20 @@
         "filed": "2023-02-22",
         "accession_number": "0000070858-23-000092"
       },
+      "gross_loans": {
+        "value_usd": 1045747000000,
+        "concept": "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLoss",
+        "end_date": "2022-12-31",
+        "filed": "2023-02-22",
+        "accession_number": "0000070858-23-000092"
+      },
+      "net_loans": {
+        "value_usd": 1033065000000,
+        "concept": "us-gaap:FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss",
+        "end_date": "2022-12-31",
+        "filed": "2023-02-22",
+        "accession_number": "0000070858-23-000092"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 115053000000,
         "calculation": "interest_income + noninterest_income"
@@ -355,6 +397,20 @@
       "held_to_maturity_securities_fair_value": {
         "value_usd": 496597000000,
         "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2023-12-31",
+        "filed": "2024-02-20",
+        "accession_number": "0000070858-24-000122"
+      },
+      "gross_loans": {
+        "value_usd": 1053732000000,
+        "concept": "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLoss",
+        "end_date": "2023-12-31",
+        "filed": "2024-02-20",
+        "accession_number": "0000070858-24-000122"
+      },
+      "net_loans": {
+        "value_usd": 1040390000000,
+        "concept": "us-gaap:FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss",
         "end_date": "2023-12-31",
         "filed": "2024-02-20",
         "accession_number": "0000070858-24-000122"

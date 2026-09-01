@@ -89,6 +89,10 @@
         "accession_number": null,
         "source_label": "Deposits 57,504"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 524243000.0,
         "calculation": "interest_income + noninterest_income"
@@ -175,6 +179,10 @@
         "accession_number": null,
         "source_label": "Deposits 54,948"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 560178000.0,
         "calculation": "interest_income + noninterest_income"
@@ -261,6 +269,10 @@
         "accession_number": null,
         "source_label": "Deposits 51,272"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 587087000.0,
         "calculation": "interest_income + noninterest_income"
@@ -368,6 +380,24 @@
       },
       "held_to_maturity_securities_fair_value": {
         "value_usd": 4944777000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2021",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "gross_loans": {
+        "value_usd": 64862798000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2021",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "net_loans": {
+        "value_usd": 64388409000.0,
         "concept": "calculated",
         "end_date": "December 31, 2021",
         "filed": "calculated",

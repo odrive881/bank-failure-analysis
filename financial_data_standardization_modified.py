@@ -64,6 +64,20 @@ METRICS: dict[str, list[str]] = {
         "us-gaap:HeldToMaturitySecurities",
     ],
     "held_to_maturity_securities_fair_value": ["us-gaap:HeldToMaturitySecuritiesFairValue"],
+    # All four EDGAR-sourced banks retagged their loan-portfolio concept
+    # around the FY2021 CECL transition -- the newer tag covers the later
+    # years, the legacy tag covers FY2020 (and, for SIVB, all years, since
+    # its last 10-K predates any migration). Verified numerically (not just
+    # by tag name): comparative-column overlaps between filings confirm
+    # these are the same underlying line item under different XBRL tags.
+    "gross_loans": [
+        "us-gaap:FinancingReceivableExcludingAccruedInterestBeforeAllowanceForCreditLoss",
+        "us-gaap:NotesReceivableGross",
+    ],
+    "net_loans": [
+        "us-gaap:FinancingReceivableExcludingAccruedInterestAfterAllowanceForCreditLoss",
+        "us-gaap:NotesReceivableNet",
+    ],
 }
 
 FLOW_METRICS = {
@@ -96,6 +110,8 @@ PDF_METRICS = {
     "interest_expense_deposits": "interest_expense_deposits",
     "held_to_maturity_securities": "held_to_maturity_securities",
     "held_to_maturity_securities_fair_value": "held_to_maturity_securities_fair_value",
+    "gross_loans": "gross_loans",
+    "net_loans": "net_loans",
 }
 
 # A source row contains all comparative-period columns.  Processed output is

@@ -5,6 +5,24 @@
     "filing_type": "10-K",
     "period_end_date": "December 31, 2021",
     "data": {
+      "gross_loans": {
+        "label_matched": "Loans and leases 64,862,798 48,833,098",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 64862798000.0,
+          "2020": 48833098000.0
+        }
+      },
+      "net_loans": {
+        "label_matched": "Loans and leases, net 64,388,409 48,324,799",
+        "units": "USD",
+        "reported_scale": "thousands",
+        "values_by_period": {
+          "2021": 64388409000.0,
+          "2020": 48324799000.0
+        }
+      },
       "total_assets": {
         "label_matched": "Total assets $ 118,445,427 73,888,344",
         "units": "USD",

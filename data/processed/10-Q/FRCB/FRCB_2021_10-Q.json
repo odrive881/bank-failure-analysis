@@ -89,6 +89,10 @@
         "accession_number": null,
         "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27,571"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 1217815000.0,
         "calculation": "interest_income + noninterest_income"
@@ -175,6 +179,10 @@
         "accession_number": null,
         "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24,096"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 1304613000.0,
         "calculation": "interest_income + noninterest_income"
@@ -261,6 +269,10 @@
         "accession_number": null,
         "source_label": "Deposits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22,410"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 1368029000.0,
         "calculation": "interest_income + noninterest_income"
@@ -368,6 +380,24 @@
       },
       "held_to_maturity_securities_fair_value": {
         "value_usd": 23422000000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2021",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "gross_loans": {
+        "value_usd": 134956000000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2021",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "net_loans": {
+        "value_usd": 134262000000.0,
         "concept": "calculated",
         "end_date": "December 31, 2021",
         "filed": "calculated",

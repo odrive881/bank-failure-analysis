@@ -75,6 +75,34 @@
         "filed": "2022-05-06",
         "accession_number": "0000719739-22-000040"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 98713000000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-06",
+        "accession_number": "0000719739-22-000040"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 91667000000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-06",
+        "accession_number": "0000719739-22-000040"
+      },
+      "gross_loans": {
+        "value_usd": 68665000000,
+        "concept": "us-gaap:NotesReceivableGross",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-06",
+        "accession_number": "0000719739-22-000040"
+      },
+      "net_loans": {
+        "value_usd": 68244000000,
+        "concept": "us-gaap:NotesReceivableNet",
+        "end_date": "2022-03-31",
+        "filed": "2022-05-06",
+        "accession_number": "0000719739-22-000040"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1639000000,
         "calculation": "interest_income + noninterest_income"
@@ -151,6 +179,34 @@
         "filed": "2022-08-08",
         "accession_number": "0000719739-22-000055"
       },
+      "held_to_maturity_securities": {
+        "value_usd": 95820000000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-08",
+        "accession_number": "0000719739-22-000055"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 84579000000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-08",
+        "accession_number": "0000719739-22-000055"
+      },
+      "gross_loans": {
+        "value_usd": 70955000000,
+        "concept": "us-gaap:NotesReceivableGross",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-08",
+        "accession_number": "0000719739-22-000055"
+      },
+      "net_loans": {
+        "value_usd": 70410000000,
+        "concept": "us-gaap:NotesReceivableNet",
+        "end_date": "2022-06-30",
+        "filed": "2022-08-08",
+        "accession_number": "0000719739-22-000055"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 1636000000,
         "calculation": "interest_income + noninterest_income"
@@ -223,6 +279,34 @@
       "interest_expense_deposits": {
         "value_usd": 249000000,
         "concept": "us-gaap:InterestExpenseDeposits",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-07",
+        "accession_number": "0000719739-22-000081"
+      },
+      "held_to_maturity_securities": {
+        "value_usd": 93292000000,
+        "concept": "us-gaap:HeldToMaturitySecurities",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-07",
+        "accession_number": "0000719739-22-000081"
+      },
+      "held_to_maturity_securities_fair_value": {
+        "value_usd": 77370000000,
+        "concept": "us-gaap:HeldToMaturitySecuritiesFairValue",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-07",
+        "accession_number": "0000719739-22-000081"
+      },
+      "gross_loans": {
+        "value_usd": 72129000000,
+        "concept": "us-gaap:NotesReceivableGross",
+        "end_date": "2022-09-30",
+        "filed": "2022-11-07",
+        "accession_number": "0000719739-22-000081"
+      },
+      "net_loans": {
+        "value_usd": 71572000000,
+        "concept": "us-gaap:NotesReceivableNet",
         "end_date": "2022-09-30",
         "filed": "2022-11-07",
         "accession_number": "0000719739-22-000081"
@@ -323,6 +407,22 @@
       },
       "held_to_maturity_securities_fair_value": {
         "value_usd": 76169000000,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)"
+      },
+      "gross_loans": {
+        "value_usd": 74250000000,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)"
+      },
+      "net_loans": {
+        "value_usd": 73614000000,
         "concept": "calculated",
         "end_date": "December 31, 2022",
         "filed": "calculated",

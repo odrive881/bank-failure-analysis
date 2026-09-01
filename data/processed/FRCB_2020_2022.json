@@ -104,6 +104,22 @@
         "accession_number": null,
         "source_label": "Debt securities held-to-maturity,"
       },
+      "gross_loans": {
+        "value_usd": 112566000000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans .......................................................................... 134,956"
+      },
+      "net_loans": {
+        "value_usd": 111931000000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2020",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 4508000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -206,6 +222,22 @@
         "accession_number": null,
         "source_label": "Debt securities held-to-maturity,"
       },
+      "gross_loans": {
+        "value_usd": 134956000000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans .......................................................................... 134,956"
+      },
+      "net_loans": {
+        "value_usd": 134262000000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2021",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans,"
+      },
       "interest_income_plus_noninterest_income": {
         "value_usd": 5305000000.0,
         "calculation": "interest_income + noninterest_income"
@@ -307,6 +339,22 @@
         "filed": null,
         "accession_number": null,
         "source_label": "Debt securities held-to-maturity,"
+      },
+      "gross_loans": {
+        "value_usd": 166868000000.0,
+        "concept": "pdf-derived:gross_loans",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans .......................................................................... 166,868"
+      },
+      "net_loans": {
+        "value_usd": 166084000000.0,
+        "concept": "pdf-derived:net_loans",
+        "end_date": "December 31, 2022",
+        "filed": null,
+        "accession_number": null,
+        "source_label": "Loans,"
       },
       "interest_income_plus_noninterest_income": {
         "value_usd": 6753000000.0,

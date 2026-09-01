@@ -89,6 +89,10 @@
         "accession_number": null,
         "source_label": "Deposits 46,040"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 676569000.0,
         "calculation": "interest_income + noninterest_income"
@@ -175,6 +179,10 @@
         "accession_number": null,
         "source_label": "Deposits 106,304"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 812241000.0,
         "calculation": "interest_income + noninterest_income"
@@ -261,6 +269,10 @@
         "accession_number": null,
         "source_label": "Deposits 286,036"
       },
+      "held_to_maturity_securities": null,
+      "held_to_maturity_securities_fair_value": null,
+      "gross_loans": null,
+      "net_loans": null,
       "interest_income_plus_noninterest_income": {
         "value_usd": 1020104000.0,
         "calculation": "interest_income + noninterest_income"
@@ -368,6 +380,24 @@
       },
       "held_to_maturity_securities_fair_value": {
         "value_usd": 7018200000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "gross_loans": {
+        "value_usd": 74292404000.0,
+        "concept": "calculated",
+        "end_date": "December 31, 2022",
+        "filed": "calculated",
+        "accession_number": "calculated",
+        "calculation": "FY value (point-in-time balance)",
+        "source_label": "calculated"
+      },
+      "net_loans": {
+        "value_usd": 73802542000.0,
         "concept": "calculated",
         "end_date": "December 31, 2022",
         "filed": "calculated",

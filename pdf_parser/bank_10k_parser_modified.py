@@ -19,6 +19,8 @@ Financial Condition and the Consolidated Statement(s) of Income):
     - Interest Expense on Deposits
     - Total Deposits (consolidated)
     - Accumulated Other Comprehensive Income / (Loss)
+    - Loans (gross, before allowance for credit losses)
+    - Loans, net (of allowance for credit losses)
 
 Designed against First Republic Bank and Signature Bank 10-K filings,
 but built to be reasonably resilient to the label variations found in
@@ -361,6 +363,19 @@ LINE_ITEMS = [
         "accumulated_oci", "Accumulated Other Comprehensive Income/(Loss)",
         re.compile(r"^Accumulated\s*other\s*comprehensive\s*(income|loss)", re.IGNORECASE),
     ),
+    LineItemSpec(
+        "gross_loans", "Loans (gross, before allowance for credit losses)",
+        # FRB reports a bare "Loans" row; SBNY reports "Loans and leases".
+        # Both must be excluded from matching two other rows on the same
+        # statement: "Loans held for sale" (a distinct balance-sheet item)
+        # and the "..., net" row a line or two below, which is its own
+        # LineItemSpec (net_loans) below.
+        re.compile(r"^Loans(?:\s*and\s*leases)?\b(?!\s*(?:held\b|,?\s*net\b))", re.IGNORECASE),
+    ),
+    LineItemSpec(
+        "net_loans", "Loans, net (of allowance for credit losses)",
+        re.compile(r"^Loans(?:\s*and\s*leases)?,?\s*net\b", re.IGNORECASE),
+    ),
 ]
 
 
@@ -670,7 +685,8 @@ def parse_filing(pdf_path: str, bank_override: Optional[str] = None) -> dict:
         bs_items = extract_line_items(
             bs_section,
             [s for s in LINE_ITEMS if s.key in (
-                "total_assets", "stockholders_equity", "total_deposits", "accumulated_oci"
+                "total_assets", "stockholders_equity", "total_deposits", "accumulated_oci",
+                "gross_loans", "net_loans",
             )],
         )
         for key, info in bs_items.items():
@@ -680,7 +696,8 @@ def parse_filing(pdf_path: str, bank_override: Optional[str] = None) -> dict:
                 "reported_scale": bs_units,
                 "values_by_period": build_period_value_map(info["raw_values"], bs_periods, bs_mult),
             }
-        for key in ("total_assets", "stockholders_equity", "total_deposits", "accumulated_oci"):
+        for key in ("total_assets", "stockholders_equity", "total_deposits", "accumulated_oci",
+                    "gross_loans", "net_loans"):
             if key not in data:
                 warnings.append(f"Could not locate line item '{key}' in balance sheet section")
 

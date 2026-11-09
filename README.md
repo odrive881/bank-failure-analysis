@@ -1,14 +1,12 @@
 # Megabanks vs Regional Banks
 
-A comparative financial-health analysis of six U.S. bank holding companies across 2020–2023:
+A light comparative analysis of the American banking sector leading up to the 2023 US Banking Crisis. The goal of the project being to see what metrics serve as the most plausible financial stress signals for the regional banks that failed. The cohorts analyzed include:
 
 - **Megabanks:** JPMorgan Chase (JPM), Bank of America (BAC)
 - **Resilient regional:** PNC Financial Services (PNC)
 - **Failed regionals:** SVB Financial/Silicon Valley Bank (SIVB), First Republic Bank (FRCB), Signature Bank (SBNY)
 
-The goal is to see whether the failed regionals showed measurable pre-2023 stress — margin compression, worsening efficiency, mounting unrealized bond losses relative to capital — that the megabanks and PNC didn't, using ROE, ROA, Net Interest Margin (NIM), Efficiency Ratio (ER), and AOCI-as-%-of-equity as the core metrics.
-
-All underlying data is public: SEC EDGAR filings/XBRL company facts and FDIC Call Report / bank-failure records.
+All underlying data is public: SEC EDGAR filings/XBRL company facts and FDIC Call Report / bank-failure records 
 
 ## Setup
 
